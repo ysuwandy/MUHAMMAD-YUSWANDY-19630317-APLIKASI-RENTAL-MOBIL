@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="613997e9-8291-49b2-b457-39abd28281ac">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     transaksi.`nmpenyewa` AS transaksi_nmpenyewa,
+     transaksi.`notrans` AS transaksi_notrans,
+     transaksi.`tglsewa` AS transaksi_tglsewa,
+     transaksi.`tglkembali` AS transaksi_tglkembali,
+     transaksi.`biaya` AS transaksi_biaya,
+     transaksi.`lmsewa` AS transaksi_lmsewa,
+     transaksi.`merkmobil` AS transaksi_merkmobil
+FROM
+     `transaksi` transaksi]]>
+	</queryString>
+	<field name="transaksi_nmpenyewa" class="java.lang.String"/>
+	<field name="transaksi_notrans" class="java.lang.String"/>
+	<field name="transaksi_tglsewa" class="java.lang.String"/>
+	<field name="transaksi_tglkembali" class="java.lang.String"/>
+	<field name="transaksi_biaya" class="java.lang.String"/>
+	<field name="transaksi_lmsewa" class="java.lang.String"/>
+	<field name="transaksi_merkmobil" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="109" y="26" width="332" height="25" uuid="e81140cb-4095-4eb4-8098-7b67d9d4f89b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BUKTI TRANSAKSI PEMBAYARAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="41" width="79" height="20" uuid="14265c59-d8f7-4c2d-bebb-1f7dff1a3e80"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Penyewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="41" width="79" height="20" uuid="bc75c6eb-e138-4d2b-98cd-6b062749e0b0"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="41" width="79" height="20" uuid="b759eb01-553f-4533-9a3b-17ac996a2f99"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="41" width="79" height="20" uuid="02e6f535-66a9-44a5-ab07-848d1f7c103e"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="41" width="79" height="20" uuid="4b4c09bb-7835-4afd-9400-0cdbd427782c"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Biaya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="41" width="79" height="20" uuid="500e5341-2af6-477d-a88d-8411afe91b3c"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lama Sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="41" width="79" height="20" uuid="de79cb18-06b6-4267-8010-515948cc4251"/>
+				<box>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Merk Mobil]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="79" height="20" uuid="ae2431bc-7e7a-4367-80d6-22d38bccb716"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_nmpenyewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="79" height="20" uuid="f16f8df7-bf29-4bd5-8350-f6f465ce4eba"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_notrans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="79" height="20" uuid="41da1197-098b-4db2-b9bd-f7d9f1801140"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_tglsewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="79" height="20" uuid="34a60ad1-c757-4e35-bf01-79f7e63d55a1"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_tglkembali}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="79" height="20" uuid="55bf8b69-9aaf-421c-bfea-da3856872310"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_biaya}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="79" height="20" uuid="486380c4-94b4-4c54-b115-d10765df122d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_lmsewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="79" height="20" uuid="d4c7d8aa-e38c-4996-a9c1-d40cf8a35d7d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{transaksi_merkmobil}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
